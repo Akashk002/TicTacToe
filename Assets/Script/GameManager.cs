@@ -12,9 +12,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Sprite circle, cross;
     [SerializeField] private GameOverController gameOverController;
     [SerializeField] private TextMeshProUGUI turnText;
-    public bool aiTurn;
-    public PlayerTurn playerTurn;
-    public GameMode gameMode;
+    private bool aiTurn;
+    private PlayerTurn playerTurn;
+    private GameMode gameMode;
     private void Awake()
     {
         Instance = this;
